@@ -14,6 +14,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderingComponent } from './components/headering/headering.component';
+import { MatPseudoCheckbox } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HeaderingComponent } from './components/headering/headering.component';
   ],
   imports: [
     BrowserModule,
-    HeaderingComponent
+    HeaderingComponent,
+    MatPseudoCheckbox
   ],
   providers: [],
   bootstrap: [AppComponent]
