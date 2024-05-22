@@ -1,0 +1,14 @@
+.center {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    justify-content: center;
+  }
+  .centerBtn {
+    display: flex;
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+  }
