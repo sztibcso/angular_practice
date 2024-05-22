@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { RegComponent } from './pages/reg/reg.component';
 import { ProfileDataComponent } from './pages/profile-data/profile-data.component';
@@ -15,6 +14,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderingComponent } from './components/headering/headering.component';
 import { MatPseudoCheckbox } from '@angular/material/core';
+import { MatButtonModule } from '@angular/material/button';
+import { ButtonForgottComponent } from './components/button-forgott/button-forgott.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,13 @@ import { MatPseudoCheckbox } from '@angular/material/core';
   imports: [
     BrowserModule,
     HeaderingComponent,
-    MatPseudoCheckbox
+    MatPseudoCheckbox,
+    MatButtonModule,
+    ButtonForgottComponent
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

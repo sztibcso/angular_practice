@@ -2,13 +2,19 @@
     /* border: 5px solid; */
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     justify-content: center;
   }
   .centerBracket {
-    border: 5px solid;
+    /* display: flex; */
+    border: 4px solid;
     margin: auto;
-    width: 50%;
+    width: 25%;
     padding: 10px;
+    justify-content: center;
   }
+  .clr-input{
+    width: 100%;
+    
+ }
