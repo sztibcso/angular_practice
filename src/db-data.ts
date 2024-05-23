@@ -1,4 +1,4 @@
-export const KARTYA: any = [
+export const KARTYAK: any = [
 
     {
         id: 1,
@@ -30,5 +30,5 @@ export const KARTYA: any = [
 
 
 export function findKartyaById(kartyaId:number) {
-    return KARTYA.find(kartya => kartya.id === kartyaId);
+    return KARTYAK.find(kartya => kartya.id === kartyaId);
 }

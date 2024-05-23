@@ -1,8 +1,14 @@
+  
+#deals {
+   display: flex;        /* Flex layout so items have equal height  */
+   flex-flow: row wrap;  /* Allow items to wrap into multiple lines */
+ }
 
 kartya-card {
-    display: block;
+    display: flex;        /* Lay out each item using flex layout */
+    flex-flow: column;    /* Lay out item’s contents vertically  */
   }
-  
+
   .kartya-card {
     margin-bottom: 40px;
     text-align: center;

@@ -1,1 +1,78 @@
-<p>card works!</p>
+<!-- <div class="kartya-card" *ngIf="kartya"
+    //Ez a rész az adatok felhasználásával beintegrált kártya komponens
+    [ngClass]="cardClasses()">
+
+    <div class="kartya-title">
+        {{ kartya.id }} {{ kartya.description }}
+    </div>
+    <img [src]="kartya.iconUrl" 
+        alt="Angular Logo" 
+        width="300">
+
+    <div class="kartya-description">
+        {{ kartya.longDescription }}
+    </div>
+
+    <button (click)="onKartyaViewed()">View Course</button>
+
+</div> -->
+<section class="deals">
+    <div class="kartya-card" style="width: 30%;">
+
+        <div class="kartya-title">
+            <h1>1</h1>
+        </div>
+        <div class="kartya-title">
+            <h2>Profil Adatok</h2>
+        </div>
+        <img src='https://cdn1.iconfinder.com/data/icons/basic-ui-set-v5-user-outline/64/Account_profile_user_avatar_small-512.png' 
+            alt="Angular Logo" 
+            width="300">
+
+        <div class="kartya-description">
+            <h3>Szerkeztheted saját profilod adatait.</h3>
+        </div>
+
+        <button (click)="onKartyaViewed()">Kártya megtekintése</button>
+
+    </div>
+    <div class="kartya-card" style="width: 30%;">
+
+        <div class="kartya-title">
+            <h1>2</h1>
+        </div>
+        <div class="kartya-title">
+            <h2>Adatok</h2>
+        </div>
+        <img src='https://static.thenounproject.com/png/5085161-200.png' 
+            alt="Angular Logo" 
+            width="300">
+
+        <div class="kartya-description">
+            <h3>Láthatod a többi adatot.</h3>
+        </div>
+
+        <button (click)="onKartyaViewed()">Kártya megtekintése</button>
+
+    </div>
+
+    <div class="kartya-card" style="width: 30%;">
+
+        <div class="kartya-title">
+            <h1>3</h1>
+        </div>
+        <div class="kartya-title">
+            <h2>Információ lekérdezés</h2>
+        </div>
+        <img src='https://i.pinimg.com/originals/3a/30/05/3a300544e29b8800454b32a67699d6db.png' 
+            alt="Angular Logo" 
+            width="300">
+
+        <div class="kartya-description">
+            <h3>Kérj le menő Trónok harca idézeteket!</h3>
+        </div>
+
+        <button (click)="onKartyaViewed()">Kártya megtekintése</button>
+
+    </div>
+</section>

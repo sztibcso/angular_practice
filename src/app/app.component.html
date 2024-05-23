@@ -1,10 +1,25 @@
 <app-headering></app-headering>
-<!-- <app-card></app-card>
-<app-page-not-found></app-page-not-found>
+<!-- <div class="kartyak">
+//Ez a rész az adatok felhasználásával beintegrált kártya komponens
+    @for (kartya of kartyak; track kartya.id; let index = $index;) {
+        
+        <app-card
+            [kartya]="kartya"
+            [index]="index"
+            (kartyaSelected) = "onKartyaSelected($event)" />
+
+    }
+    @empty {
+        <h1>Nor Courses founsd!</h1>
+      }
+
+</div> -->
+<!-- <app-page-not-found></app-page-not-found>
 <app-table></app-table>
 <app-datas></app-datas>
 <app-got-quotes></app-got-quotes> -->
 <!-- <app-login></app-login> -->
-<app-main-page></app-main-page>
+<!-- <app-main-page></app-main-page> -->
 <!-- <app-profile-data></app-profile-data> -->
 <!-- <app-reg></app-reg>  -->
+<app-card></app-card>
