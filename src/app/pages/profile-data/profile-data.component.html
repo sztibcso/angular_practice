@@ -1,1 +1,39 @@
-<p>profile-data works!</p>
+<h1 class="center-title">Profil adatok</h1>
+<div class="centerBracket">
+    <div><label class="label-title">Név: </label> {{ val1 }}</div>
+    <div><label class="label-title">Város: </label>{{ val2 }}</div>
+    <div><label class="label-title">Cím: </label>{{ val3 }}</div>
+    <div><label class="label-title">Telefonszám: </label>{{ val4 }}</div>
+    <div><label class="label-title">E-mail: </label>{{ val5 }}</div>
+</div>
+<div class="center">
+    <div>
+        <label>Név</label>
+        <br>
+        <app-dinput [(value)]="val1"></app-dinput>
+    </div>
+    <div>
+        <label>Város</label>
+        <br>
+        <app-dinput [(value)]="val2"></app-dinput>
+    </div>
+    <div>
+        <label>Cím</label>
+        <br>
+        <app-dinput [(value)]="val3"></app-dinput>
+    </div>
+    <div>
+        <label>Telefonszám</label>
+        <br>
+        <app-dinput [(value)]="val4"></app-dinput>
+    </div>
+    <div>
+        <label>E-mail</label>
+        <br>
+        <app-dinput [(value)]="val5"></app-dinput>
+    </div>
+</div>
+
+
+
+

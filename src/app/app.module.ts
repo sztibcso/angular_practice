@@ -17,6 +17,7 @@ import { MatPseudoCheckbox } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { ButtonForgottComponent } from './components/button-forgott/button-forgott.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { DinputComponent } from './components/dinput/dinput.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     HeaderingComponent,
     MatPseudoCheckbox,
     MatButtonModule,
-    ButtonForgottComponent
+    ButtonForgottComponent,
+    DinputComponent
   ],
   providers: [
     provideAnimationsAsync()
