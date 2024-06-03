@@ -29,7 +29,6 @@ import { DinputComponent } from './components/dinput/dinput.component';
     CardComponent,
     LoginComponent,
     RegCompComponent,
-    TableComponent,
     MainPageComponent,
     PageNotFoundComponent,
   ],
@@ -39,7 +38,8 @@ import { DinputComponent } from './components/dinput/dinput.component';
     MatPseudoCheckbox,
     MatButtonModule,
     ButtonForgottComponent,
-    DinputComponent
+    DinputComponent,
+    TableComponent
   ],
   providers: [
     provideAnimationsAsync()
