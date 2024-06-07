@@ -15,6 +15,8 @@
     justify-content: center;
   }
   .clr-input{
-    width: 100%;
-    
+    width: 100%;  
  }
+ .centerImg {
+  justify-content: center;
+}

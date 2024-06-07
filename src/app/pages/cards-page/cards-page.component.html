@@ -1,0 +1,13 @@
+<div class="kartyak">
+    <!--Ez a rész az adatok felhasználásával beintegrált kártya komponens-->
+    <mat-grid-list cols="3">
+        @for (kartya of kartyak; track kartya.id) {
+            <mat-grid-tile>
+                <app-card
+                    [kartya]="kartya"
+                    [index]="index"
+                    (kartyaSelected) = "onKartyaSelected($event)" />
+           </mat-grid-tile>
+        }
+    </mat-grid-list>
+</div>

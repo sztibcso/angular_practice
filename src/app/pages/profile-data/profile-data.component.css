@@ -35,3 +35,11 @@
     padding: 10px;
     justify-content: center;
   }
+  .centerBtn {
+    /* border: 5px solid; */
+    display: flex;
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+    justify-content: center;
+  }

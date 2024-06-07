@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import {Routes} from '@angular/router';
 import { HeaderingComponent } from './components/headering/headering.component';
-import { KARTYAK as KARTYAK } from 'src/db-data';
+import { KARTYAK } from 'src/db-data';
 import { Kartya } from './model/kartya';
+
 
 export const routes = [];
 

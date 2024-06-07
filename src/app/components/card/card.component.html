@@ -1,9 +1,13 @@
-<!-- <div class="kartya-card" *ngIf="kartya"
-    //Ez a rész az adatok felhasználásával beintegrált kártya komponens
-    [ngClass]="cardClasses()">
-
+<mat-card class="cards">
+<div class="kartya-card" *ngIf="kartya">
+  <!-- Ez a rész az adatok felhasználásával beintegrált kártya komponens -->
+  <!-- <div class="kartya-card" *ngIf="kartya"
+    [ngClass]="cardClasses()"
+    > -->
     <div class="kartya-title">
-        {{ kartya.id }} {{ kartya.description }}
+        {{ kartya.id }} 
+        <br><br>
+        {{ kartya.description }}
     </div>
     <img [src]="kartya.iconUrl" 
         alt="Angular Logo" 
@@ -12,10 +16,12 @@
     <div class="kartya-description">
         {{ kartya.longDescription }}
     </div>
-
-    <button (click)="onKartyaViewed()">View Course</button>
-
-</div> -->
+    <br>
+    <button mat-raised-button color="primary" (click)="onKartyaViewed()">Click</button>
+</div>
+</mat-card>
+<!-- Külön küülön megalkotott kártyák beimportálás nélkül -->
+<!-- </div>
 <div class="cointainer">
     <div class="column">
         <div class="col-xs-4">
@@ -83,4 +89,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

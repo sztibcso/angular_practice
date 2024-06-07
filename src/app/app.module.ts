@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RegComponent } from './pages/reg/reg.component';
@@ -18,6 +18,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { ButtonForgottComponent } from './components/button-forgott/button-forgott.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DinputComponent } from './components/dinput/dinput.component';
+import { ButtonForAllComponent } from './components/button-for-all/button-for-all.component';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { CardsPageComponent } from './pages/cards-page/cards-page.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  {path: '', component: MainPageComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'reg', component: RegComponent},
+  {path: 'cards-page', component: CardsPageComponent},
+  {path: 'profile-data', component: ProfileDataComponent},
+  {path: 'datas', component: DatasComponent},
+  {path: 'got-quotes', component: GotQuotesComponent},
+];
 
 @NgModule({
   declarations: [
@@ -31,6 +47,7 @@ import { DinputComponent } from './components/dinput/dinput.component';
     RegCompComponent,
     MainPageComponent,
     PageNotFoundComponent,
+    CardsPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +56,12 @@ import { DinputComponent } from './components/dinput/dinput.component';
     MatButtonModule,
     ButtonForgottComponent,
     DinputComponent,
-    TableComponent
+    TableComponent,
+    ButtonForAllComponent,
+    FloatLabelModule,
+    MatCardModule,
+    MatGridListModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [
     provideAnimationsAsync()
